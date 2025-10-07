@@ -21,6 +21,11 @@ function mapCollege(row) {
   };
 }
 
+app.get("/", (req, res) => {
+  res.send("🚀 Backend is running successfully on Render!");
+});
+
+
 // GET /colleges with filters and sorting
 app.get('/colleges', async (req, res) => {
   const querySchema = z.object({
